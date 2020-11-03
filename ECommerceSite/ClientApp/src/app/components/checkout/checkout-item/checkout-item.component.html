@@ -1,0 +1,15 @@
+<div class="row mb-4">
+    <div class="col-md-7 col-lg-9 col-xl-9">
+        <div class="d-flex justify-content-between">
+            <h5>{{ checkoutItem.productName}}</h5>
+            <!--<input class="quantity" min="1" name="quantity" value="{{ checkoutItem.quantity}}" type="number">-->
+            <p><span><strong>Qty: {{ checkoutItem.quantity }}</strong></span></p>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <button type="button" class="btn btn-primary btn-block" id="removeBtn" (click)="handleRemoveFromCart()">Remove Item</button>
+            </div>
+            <p><span><strong>{{ checkoutItem.price }}</strong></span></p>
+        </div>
+    </div>
+</div>
